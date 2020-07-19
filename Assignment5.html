@@ -1,0 +1,35 @@
+<html> 
+<head> 
+    <title> 
+         day 4 Assignment
+    </title> 
+</head> 
+  
+<body > 
+    <h1>Day 4 Assignment </h1>
+<script>
+    var sales= Number(prompt("Enter the total number of sales in this year:"));
+
+    if(sales >=0 && sales <=5000)
+    {
+        var commission= sales*0.02;
+        console.log(`Total commission is ${commission}`);
+    }
+    if(sales >=5001 && sales <=10000)
+    {
+        var commission= (5001 * 0.02)+((sales-5001)*0.05);
+        console.log(`Total commission is ${commission}`);
+    }
+    if(sales >=10001 && sales <=20000)
+    {
+        var commission= (5001 * 0.02) + (5001 * 0.05)+((sales - 10001) * 0.07);
+        console.log(`Total commission is ${commission}`);
+    }
+    if(sales >=20001)
+    {
+        var commission= (5001 * 0.02) + (5001 * 0.05)+ (10000 * 0.07)+((sales-20001) * 0.1);
+        console.log(`Total commission is ${commission}`);
+    }
+</script> 
+</body> 
+</html>
