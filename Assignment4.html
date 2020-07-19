@@ -1,0 +1,85 @@
+<html> 
+<head> 
+    <title> 
+         day 4 Assignment
+    </title> 
+</head> 
+  
+<body > 
+    <h1>Day 4 Assignment </h1>
+<script>
+    let choice =Number(prompt("Choose the operation: \n"+"1.Addition"+"\n"+"2.Subtraction"+"\n"+"3.Multiplication"+"\n"+"4.Division"+"\n"+"5.Square root"+"\n"+"6.Percentage"));
+    
+    if(choice<1 || choice>6 || choice ==NaN)
+        {
+            console.log("The value you entered is Ivalid");
+        }
+        else
+        {
+            switch(choice)
+            {
+                case 1:
+                    let num1=Number(prompt("Enter the first number"));
+                    let num2=Number(prompt("Enter the second nunmber"));
+                    if(num1==NaN || num2==NaN)
+                    {
+                        alert("Input the numeric value");
+                    }
+                    result= num1+num2;
+                    console.log(`The result is ${result}`);
+                    break;
+                case 2:
+                    let num3=Number(prompt("Enter the first number"));
+                    let num4=Number(prompt("Enter the second nunmber"));
+                    if(num3==NaN || num4==NaN)
+                    {
+                        alert("Input the numeric value");
+                    }
+                    result= num3 - num4;
+                    console.log(`The result is ${result}`);
+                    break;
+                case 3:
+                    let num5=Number(prompt("Enter the first number"));
+                    let num6=Number(prompt("Enter the second nunmber"));
+                    if(num5==NaN || num6==NaN)
+                    {
+                        alert("Input the numeric value");
+                    }
+                    result= num5 * num6;
+                    console.log(`The result is ${result}`);
+                    break;
+                case 4:
+                    let num7=Number(prompt("Enter the first number"));
+                    let num8=Number(prompt("Enter the second nunmber"));
+                    if(num7==NaN || num8==NaN)
+                    {
+                        alert("Input the numeric value");
+                    }
+                    result= num7 % num8;
+                    console.log(`The result is ${result}`);
+                    break;
+                case 5:
+                    let num9=Number(prompt("Enter the first number"));
+                    if(num9==NaN)
+                    {
+                        alert("Input the numeric value");
+                    }
+                    result= console.log(Math.sqrt(num9));
+                    console.log(`The result is ${result}`);
+                    break;
+                case 6:
+                    let num10=Number(prompt("Enter the first number"));
+                    let num11=Number(prompt("Enter the second nunmber"));
+                    if(num10==NaN || num11==NaN)
+                    {
+                        alert("Input the numeric value");
+                    }
+                    result= num10/num11*100;
+                    console.log(`The result is ${result}`);
+                    break;
+            }
+        }
+
+</script> 
+</body> 
+</html>
